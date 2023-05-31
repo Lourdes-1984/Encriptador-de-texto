@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/analysis-analytics-magnifier-magnifying-search-svgrepo-com.svg" type="image/x-icon">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <a href="#"><img class="logo" src="img/Logo.png" alt="logo del sitio"></a>
+        <h1>Encriptador de Texto... </h1>
+        
+    </header>
+    <main>
+        <section class="seccion-encriptada">
+            <textarea class="mensaje" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+
+            <div>
+               
+                <h6 class="alerta"><i class="fa-solid fa-circle-exclamation"></i>Solo letras minúsculas y sin acentos</h6>
+            </div>
+
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()"  >Encriptar</button>
+                 <button class="btn-desencriptar" onclick="btnDesencriptar()" >Desencriptar</button>
+            </div>
+        </section>
+        <section class="seccion-encriptado">
+            <textarea class="mensaje-encriptado" name="" id="" cols="30" rows="10"></textarea>
+            <!-- <div>
+                <h4>Ningún mensaje fue encontrado</h4>
+                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div> -->
+
+            <div class="boton-copiar">
+                <button class="btn-copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+        
+    </main>
+   
+    <footer>
+        <div>
+            <img src="img/logo-aluraespanhol.svg" alt="logo-alura">
+            <img src="img/one01.webp" alt="logo-one">
+        </div>
+       
+        <div>
+
+            <p>Desarrollado por Maria L. Sosa </p>
+            <p>Grupo 5 ONE - Oracle Next Education</p>
+            <a href="https://www.linkedin.com/in/maria-sosa1984/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Lourdes-1984" target="_blank"> <i class="fa-brands fa-github"></i></a>
+            <a href="https://discord.com/channels/1085569332337180703/1095724468111933541" target="_blank"><i class="fa-brands fa-discord"></i></a>
+        </div>
+        <p>2023 &copy; </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
