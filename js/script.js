@@ -2,6 +2,10 @@ const mensajeEncriptar = document.querySelector('.mensaje')
 const mensajeEncriptado = document.querySelector('.mensaje-encriptado')
 const copia = document.querySelector(".btn-copiar");
 copia.style.display = "none"
+const btnLimpiar = document.querySelector('#btnLimpiar')
+ btnLimpiar.addEventListener("click", () => {
+    limpiarHTML()
+ });
 
 
 function btnEncriptar(){
@@ -16,6 +20,7 @@ function btnEncriptar(){
 }
 
 function encriptar(letras){
+    
     let llavesEncriptacion = [['e', 'enter'],
                         ['i', 'imes'],
                         ['a', 'ai'],
@@ -28,19 +33,15 @@ function encriptar(letras){
            if(letras.includes(llavesEncriptacion[i][0])){
                 letras = letras.replaceAll(llavesEncriptacion[i][0], llavesEncriptacion[i][1])
            }
-
-        if(mensajeEncriptar === ''){
-             alert('ingrese mensaje')
-            }
-            
         }
-        
-    
+        if(mensajeEncriptar.value === ''){
+            swal('Ningún mensaje fue encontrado...', ' Ingresa el texto que deseas encriptar o desencriptar', 'error')
+            // alert('Escribe el texto que deseas encriptar')
+           }
 
         return letras
-       
-}
 
+}
 
 function btnDesencriptar(){
     const textEncriptado = desencriptar(mensajeEncriptar.value)
@@ -53,6 +54,7 @@ function btnDesencriptar(){
 
 
 function desencriptar(letrasDesencriptar){
+    
     let llavesEncriptacion = [['e', 'enter'],
                         ['i', 'imes'],
                         ['a', 'ai'],
@@ -69,15 +71,22 @@ letrasDesencriptar = letrasDesencriptar.toLowerCase()
         }
 
         return letrasDesencriptar
+        
 }
 
 function copiar(){
     mensajeEncriptado.select();
     navigator.clipboard.writeText(mensajeEncriptado.value)
     mensajeEncriptado.value = "";
-    alert("Texto Copiado")
+    swal("Texto Copiado", "Texto copiado en el portapapeles", "success")
 }
+function limpiarHTML() {
+   
+    while (mensajeEncriptado.firstChild) {
+        mensajeEncriptado.removeChild(mensajeEncriptado.firstChild)
 
+    }
+}
 
 
 
