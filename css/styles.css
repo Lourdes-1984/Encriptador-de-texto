@@ -3,69 +3,77 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
 
-body{
+body {
     background: #F3F5FC;
 }
-header{
+
+header {
     width: 100%;
     /* height: auto; */
     padding: 2rem;
     text-align: center;
 }
-h1{
+
+h1 {
     font-family: 'PT Mono', monospace;
     display: inline;
     font-size: 48px;
-    color:  #0A3871;
+    color: #0A3871;
 }
-hr{
-    -webkit-box-shadow: 14px 25px 47px -3px rgba(10,56,113,0.53);
--moz-box-shadow: 14px 25px 47px -3px rgba(10,56,113,0.53);
-box-shadow: 14px 25px 47px -3px rgba(10,56,113,0.53);
+
+hr {
+    -webkit-box-shadow: 14px 25px 47px -3px rgba(10, 56, 113, 0.53);
+    -moz-box-shadow: 14px 25px 47px -3px rgba(10, 56, 113, 0.53);
+    box-shadow: 14px 25px 47px -3px rgba(10, 56, 113, 0.53);
 }
-main{
+
+main {
     width: 100%;
-    height: auto; 
+    height: auto;
     margin-bottom: 80px;
     display: flex;
     justify-content: space-evenly;
 }
-.mensaje{
+
+.mensaje {
     width: 100%;
     height: 400px;
     padding: 20px;
     border: none;
     border-radius: 24px;
     color: #0A3871;
-    margin-top: 90px;
-     margin-left: 80px;  
-    text-transform: lowercase; 
+    margin-top: 20px;
+    margin-left: 80px;
+    text-transform: lowercase;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.mensaje:focus{
+
+.mensaje:focus {
     outline: none;
 }
-::placeholder{
+
+::placeholder {
     color: #0A3871;
-    
+
 }
-.mensaje-encriptado{
+
+.mensaje-encriptado {
     width: 100%;
     height: 400px;
     padding: 20px;
-    -webkit-box-shadow: 6px 33px 52px 20px rgba(10,56,113,0.84);
--moz-box-shadow: 6px 33px 52px 20px rgba(10,56,113,0.84);
-box-shadow: 6px 33px 52px 20px rgba(10,56,113,0.84);
-    margin-right:80px;
-    margin-top: 90px;
+    -webkit-box-shadow: 6px 33px 52px 20px rgba(10, 56, 113, 0.84);
+    -moz-box-shadow: 6px 33px 52px 20px rgba(10, 56, 113, 0.84);
+    box-shadow: 6px 33px 52px 20px rgba(10, 56, 113, 0.84);
+    margin-right: 80px;
+    margin-top: 20px;
     background-color: #ffffff;
     background-image: url("../img/Muñeco.png");
     background-repeat: no-repeat;
@@ -74,16 +82,18 @@ box-shadow: 6px 33px 52px 20px rgba(10,56,113,0.84);
     color: #0A3871;
 }
 
-.mensaje-encriptado:focus{
+.mensaje-encriptado:focus {
     outline: none;
 }
-.botones{
+
+.botones {
     width: 100%;
-    margin-left: 80px;  
+    margin-left: 80px;
     display: flex;
     justify-content: space-evenly;
 }
-.btn-encriptar{
+
+.btn-encriptar {
     padding: 10px;
     background-color: #0A3871;
     border: 1px solid #0A3871;
@@ -92,12 +102,13 @@ box-shadow: 6px 33px 52px 20px rgba(10,56,113,0.84);
     cursor: pointer;
     width: 150px;
 }
-.btn-encriptar:hover{
+
+.btn-encriptar:hover {
     background-color: #ffffff;
     color: #0A3871;
 }
 
-.btn-desencriptar{
+.btn-desencriptar {
     padding: 10px;
     background-color: #ffffff;
     border: 1px solid #0A3871;
@@ -107,16 +118,19 @@ box-shadow: 6px 33px 52px 20px rgba(10,56,113,0.84);
     width: 150px;
     margin-left: 30px;
 }
-.btn-desencriptar:hover{
+
+.btn-desencriptar:hover {
     background-color: #0A3871;
     color: #ffffff;
 }
-.boton-copiar{
+
+.boton-copiar {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.btn-copiar{
+
+.btn-copiar {
     padding: 10px;
     background-color: #0A3871;
     border: 1px solid #0A3871;
@@ -125,16 +139,16 @@ box-shadow: 6px 33px 52px 20px rgba(10,56,113,0.84);
     cursor: pointer;
     width: 150px;
     margin-top: 56px;
+    margin-right: 10px;
 }
-.btn-copiar:hover{
+
+.btn-copiar:hover {
     background-color: #ffffff;
     color: #0A3871;
 }
 
-
-
-.alerta{
-    margin-left: 80px;  
+.alerta {
+    margin-left: 80px;
     margin-top: 18px;
     margin-bottom: 18px;
     text-align: center;
@@ -142,40 +156,163 @@ box-shadow: 6px 33px 52px 20px rgba(10,56,113,0.84);
     font-size: 16px;
     font-weight: 300;
 }
-.fa-circle-exclamation{
+
+.fa-circle-exclamation {
     color: #0A3871;
     font-size: 16px;
     margin-right: 5px;
 }
-footer   {
+
+footer {
     background-color: #0A3871;
     width: 100%;
     height: auto;
     display: flex;
     justify-content: space-between;
+    font-size: 16px;
+    font-weight: 200;
     color: #ffff;
     padding: 2rem;
     text-align: center;
 }
-footer a i{
+
+footer a i {
     color: #ffff;
     font-size: 24px;
     margin-top: 20px;
     padding: 10px;
-    
+
 }
-footer .barra{
-    border-right:    1px solid hsla(200, 10%, 50%,100);
+
+footer .barra {
+    border-right: 1px solid hsla(200, 10%, 50%, 100);
     height: 100px;
-    
+
 }
-footer .barra2{
-    border-left:    1px solid hsla(200, 10%, 50%,100);
+
+footer .barra2 {
+    border-left: 1px solid hsla(200, 10%, 50%, 100);
     height: 100px;
     margin-left: 40px;
-    
+
 }
-.barra img{
+
+.barra img {
     display: block;
     margin-top: 5px;
 }
+
+@media only screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .logo {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+    main{
+        display: block;
+        /* align-items: center; */
+        width: 100%;
+    }
+     .mensaje, .mensaje-encriptado {
+      height: auto;
+      font-size: 16px;
+      /* display: flex;
+      align-items: center; */
+    } 
+    
+   
+    .btn-encriptar, .btn-desencriptar, .btn-copiar {
+      font-size: 16px;
+      padding: 8px 16px;
+      margin: 0 5px;
+    }
+    .btn-copiar{
+        margin-left: 100px;
+    }
+    #btnLimpiar{
+        margin-left: 250px;
+    }
+    footer{
+        width: 100%;
+    }
+    .barra img {
+      width: 50px;
+      height: 50;
+      margin: 0 5px;
+    }
+  
+    .fa-brands {
+      font-size: 20px;
+      margin: 0 5px;
+    }
+  }
+
+  @media only screen and (max-width: 375px){
+    header {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .logo {
+        margin-bottom: 20px;
+        text-align: center;
+
+      }
+    
+      h1 {
+        font-size: 24px;
+      }
+      main{
+          display: block;
+          align-items: center;
+         
+      }
+    
+       .mensaje, .mensaje-encriptado {
+        height: 150px;
+        font-size: 16px;
+        height: auto;
+        /* display: flex;
+        align-items: center; */
+      } 
+      .botones{
+          display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+      }
+      .boton-copiar{
+          display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .btn-encriptar, .btn-desencriptar {
+        
+        font-size: 16px;
+        padding: 8px 16px;
+        margin: 0 5px;
+        margin-bottom: 20px;
+          
+        
+      }
+    
+      .barra img {
+        width: 50px;
+        height: 50;
+        margin: 0 5px;
+      }
+    
+      .fa-brands {
+        font-size: 20px;
+        margin: 0 5px;
+      }
+    }
+  
