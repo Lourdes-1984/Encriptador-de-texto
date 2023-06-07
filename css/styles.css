@@ -11,6 +11,7 @@
 
 body {
   background: #f3f5fc;
+  /* width: 100%; */
 }
 
 header {
@@ -52,6 +53,9 @@ main {
   margin-left: 80px;
   text-transform: lowercase;
   text-align: center;
+  background-color: #ffffff;
+  font-size: 20px;
+
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -74,10 +78,14 @@ main {
   margin-top: 20px;
   background-color: #ffffff;
   background-image: url("../img/Muñeco.png");
+  background-size: auto;
+  background-position: center center;
   background-repeat: no-repeat;
+
   border: none;
   border-radius: 24px;
-  color: #0a3871;
+  color: #052051;
+  font-size: 20px;
 }
 
 .mensaje-encriptado:focus {
@@ -156,7 +164,7 @@ main {
 }
 
 .fa-circle-exclamation {
-  color: #0a3871;
+  color: #67808e;
   font-size: 16px;
   margin-right: 5px;
 }
@@ -209,31 +217,36 @@ footer .barra2 {
   font-size: 26px;
 }
 @media only screen and (max-width: 768px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-    margin: auto;
-  }
-
-  .logo {
-    margin-bottom: 20px;
+  a .logo {
+    width: 70px;
   }
 
   h1 {
-    font-size: 24px;
+    font-size: 30px;
+    margin-bottom: 20px;
   }
   main {
     display: block;
-    width: 100%;
+    /* margin: auto; */
+    margin-left: 40px;
   }
+  
   .mensaje,
   .mensaje-encriptado {
-    font-size: 16px;
+    flex-direction: column;
+    font-size: 18px;
     margin: auto;
+   height: 200px;
+    width: 80%;
+  }
+  .mensaje-encriptado {
+    background-image: url(../img/Muñeco.png);
+    background-size: 50%;
   }
   .botones {
     margin: auto;
     margin: 10px 0 10px 0;
+    
   }
   .alerta {
     margin: auto;
@@ -245,16 +258,13 @@ footer .barra2 {
   .btn-copiar {
     font-size: 12px;
     padding: 8px 16px;
-    margin: 0 5px;
   }
   .boton-copiar{
-    width: 100%;
-    margin: auto;
-    align-items: center;
-    padding: 8px 16px;
-
+    flex-direction:row;
+    text-align: center;
   }
   .btn-copiar {
+   
     margin: auto;
     margin-top: 10px;
   }
@@ -262,7 +272,6 @@ footer .barra2 {
     margin: auto;
     margin: 10px;
     font-size: 12px;
-
   }
   footer {
     width: 100%;
@@ -284,56 +293,50 @@ footer .barra2 {
 }
 
 @media only screen and (max-width: 375px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-    margin: auto;
-  }
-
-  .logo {
-    margin-bottom: 10px;
-    text-align: center;
+  a .logo {
+    width: 50px;
   }
 
   h1 {
-    font-size: 16px;
+    font-size: 24px;
     text-align: center;
   }
-  main {
+   main {
     display: block;
     align-items: center;
     margin: auto;
-  }
+    width: 80%;
+  } 
 
   .mensaje,
   .mensaje-encriptado {
-    height: 150px;
-    font-size: 14px;
+    /* height: 200px; */
     height: auto;
-    /* display: flex;
-        align-items: center; */
+    font-size: 14px;
+    margin: auto;
+  }
+  .mensaje-encriptado {
+    background-image: url(../img/Muñeco.png);
+    background-size: 80%;
   }
   .botones {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .boton-copiar {
-    display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10pc;
-    font-size: 10px;
+  }
+  .boton-copiar {
+    flex-direction: column;
+  }
+  .btn-copiar{
+    margin-bottom: 10px;
   }
   #btnLimpiar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-right:157px; */
     margin: auto;
     margin-top: 5px;
+    margin-bottom: 10px;
     font-size: 10px;
   }
   .btn-encriptar,
